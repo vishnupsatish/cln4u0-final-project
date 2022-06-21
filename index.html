@@ -31,6 +31,7 @@
                             <li><a href="#profchaio">Professor Vincent Chiao</a></li>
                         </ol>
                     </li>
+                    <li><a href="#cr">Concluding remarks</a></li>
                 </ol>
                 </p>
             </div>
@@ -111,13 +112,14 @@
                 <p>The meeting occurred at 10:30 AM on Monday June 20, 2022. Below is a recording of the meeting.</p>
                 <div class="ratio ratio-16x9 responsive-iframe mb-3 mt-3">
                     <!-- <iframe src="https://www.youtube.com/embed/_me5T3yABnQ"></iframe> -->
-                    <div id="player">
+                    <div class="player">
                         <iframe
                             src="https://www.youtube.com/embed/_me5T3yABnQ?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
                             allowfullscreen allowtransparency allow="autoplay"></iframe>
                     </div>
                 </div>
-                <p>I took notes of some of the main points of the meeting and added some of my thoughts as well. Presented below are the notes.
+                <p>I took notes on some of the main points of the meeting and added some of my thoughts as well.
+                    Presented below are the notes.
                 </p>
                 <div class="ratio ratio-16x9 responsive-iframe mb-3 mt-3">
                     <object class="pdf" type="application/pdf" data="assets/Professor Coughlan Notes.pdf"></object>
@@ -126,7 +128,52 @@
 
             <div>
                 <p id="profchaio" class="fs-5">Professor Vincent Chiao</p>
+                <p>The next professor that agreed to speak to me was Professor Vincent Chiao of the University of
+                    Toronto. He is a criminal law and criminal justice expert and a Harvard Law School graduate.</p>
+                <p>I met Professor Chiao on Tuesday June 21, 2022 at 1:00 PM. Below is a recording of the meeting.</p>
+                <div class="ratio ratio-16x9 responsive-iframe mb-3 mt-3">
+                    <!-- <iframe src="https://www.youtube.com/embed/HZkpn4xScYA"></iframe> -->
+                    <div class="player">
+                        <iframe
+                            src="https://www.youtube.com/embed/HZkpn4xScYA?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                            allowfullscreen allowtransparency allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <p>As with the previous meeting, I made sure to take notes after the meeting, with a bit of my opinion
+                    sprinkled in.</p>
+                <div class="ratio ratio-16x9 responsive-iframe mb-3 mt-3">
+                    <object class="pdf" type="application/pdf" data="assets/Professor Chiao Notes.pdf"></object>
+                </div>
+            </div>
 
+            <div>
+                <p id="cr" class="fs-3">Concluding remarks</p>
+                <p>Being a person who has avoided social science courses due to the ambiguity that exists in them, I've
+                    come to understand that ambiguity is unavoidable when dealing with humans (especially a group of
+                    humans).</p>
+                <p>After meeting with Professor Coughlan, I was able to make a connection with the concepts of natural
+                    law and positive law that we learned about earlier in the course. This was an "aha" moment for me;
+                    as I wrote the initial report and came into these meetings and this case solely thinking about the
+                    natural law perspective that law is about what humans feel are right or wrong. Professor Chiao's
+                    response to the final question I asked reinforced the belief that positive law is more important
+                    than I initially believed, since both can influence one another. It's not just natural law
+                    influencing positive law.</p>
+                <p>In general, Professor Coughlan's responses tended to be strictly on the legal side of things, such as
+                    his point that 745.51 prevented the consideration of rehabilitation, which is why it was struck
+                    down. For the one morality-related question I asked him (about whether the added part to 745.51 was
+                    correct), he made sure to mention that it requires empirical study, research, and consultation to
+                    make that decision. It's not solely a decision of public opinion or the morals of the majority. It's
+                    also about considering the statistical and factual aspects and effects of enacting a law.</p>
+                <p>Professor Chiao tended to tie his answers back to law as a theory and Canadian law. I don't think he
+                    answer many of the questions outright, but tried to explain why things are the way they are. For
+                    example, when I asked about whether 25 years as a minimum sentence for first degree murder is
+                    considered a constitutional violation, he said it can be, but the Parliament has to enforce some
+                    minimums/maximums since it is what represents the people. He also went into depth about how there is
+                    never a consensus on morals which is why the Parliament should make decisions on laws.
+                    Standardization is also difficult to enforce and is something that cannot be achieved in a
+                    democracy.</p>
+                <p>Overall, I thoroughly enjoyed speaking to both professors and I learned not only about s. 745.51, but
+                    also about the way Canadian law works.</p>
             </div>
 
         </div>
@@ -136,10 +183,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <script>
-        const player = new Plyr('#player');
-    </script>
     <script src="assets/script.js"></script>
+    <script>
+        const players = Plyr.setup('.player');
+    </script>
 </body>
 
 </html>
