@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CLN 4U0 Summative Project</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
@@ -99,14 +100,41 @@
         </div>
 
         <div>
-            <p id="ste" class="fs-3">Speaking to experts</p>
-            <p>The first professor that kindly agreed to speak to me was Professor Steve Coughlan
+            <p id="ste" class="fs-3 mb-2">Speaking to experts</p>
+            <div>
+                <p id="profcoughlan" class="fs-5">Professor Steve Coughlan</p>
+                <p>The first professor that kindly agreed to speak to me was Professor Steve Coughlan of Dalhousie
+                    Unversity. His expertise includes criminal law, criminal expertise, and law and its relation to
+                    technology. In 2019, he was ranked in the top 25 most influential in the justice system by the
+                    magazine Canadian Lawyer.</p>
+                <p>The meeting occurred at 10:30 AM on Monday June 20, 2022. Below is a recording of the meeting.</p>
+                <div class="ratio ratio-16x9 responsive-iframe mb-3 mt-3">
+                    <!-- <iframe src="https://www.youtube.com/embed/_me5T3yABnQ"></iframe> -->
+                    <div id="player">
+                        <iframe
+                            src="https://www.youtube.com/embed/_me5T3yABnQ?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                            allowfullscreen allowtransparency allow="autoplay"></iframe>
+                    </div>
+                </div>
+                <p>I didn't think there was really a need to transcribe everything that was said, as I believed that the
+                    content was better served through the video format. I did, however, take notes after the meeting.
+                    Presented below are the notes.
+                </p>
+                <div class="ratio ratio-16x9 responsive-iframe mb-3 mt-3">
+                    <iframe src="assets/Professor Coughlan Notes.pdf"></iframe>
+                </div>
+            </div>
+
         </div>
     </div>
 
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
 </body>
 
 </html>
